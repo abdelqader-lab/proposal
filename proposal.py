@@ -44,7 +44,8 @@ NO = st.button("😓لا مش فاضية😓", key="no")
 if YES:
     st.balloons()
     st.success("مبروك ياباشا")
-    with open(r"C:\Users\Kariim\OneDrive\Desktop\COURSES\AI\PROPOSAL\proposal.pptx", "rb") as file:
+    # الملف لازم يكون موجود في نفس فولدر المشروع على GitHub
+    with open("proposal.pptx", "rb") as file:
         st.download_button("Download Proposal", file.read(), "proposal.pptx")
 
 # لو ضغطت NO
@@ -64,4 +65,3 @@ if NO:
         "جربي تدوسي على الزرار التاني🥸"
     ]
     st.warning(random.choice(msgs))
-
